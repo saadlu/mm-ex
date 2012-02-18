@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.mashrur.tryouts.module_2</groupId>
+  <artifactId>child_2</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <packaging>pom</packaging>
+
+  <scm>
+    <connection>
+      scm:svn:file:///home/saad/svn/repos/module_2/trunk
+    </connection>
+  </scm>
+  <parent>
+    <groupId>net.mashrur.tryouts</groupId>
+    <artifactId>aggregator</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  
+  <build>
+    <plugins>
+      <plugin>
+	<artifactId>maven-antrun-plugin</artifactId>
+	<version>1.7</version>
+	<configuration>
+	  <target>
+	    <echo message="hello from child 2"/>
+	  </target>
+	</configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+</project>
